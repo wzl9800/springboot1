@@ -1,0 +1,28 @@
+server:
+  port: 81
+  servlet:
+    context-path: /myboot
+spring:
+  main:
+    banner-mode: off
+  banner:
+    image:
+      location: classpath:static/logo.jpg
+county: 123
+
+user:
+  name1: lisi
+  age: 16
+
+user1:
+  - name: dunshang
+    age: 23
+  - name: guanyu
+    age: 24
+
+baseDir: win10
+#使用${属性名}引用数据
+tempDir: ${baseDir}/temp
+#使用双引号包装的字符串，其中的转义字符可以生效
+
+tempDir2: "${baseDir}\temp \t1 \t2 \t3"
